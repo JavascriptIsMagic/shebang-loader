@@ -1,7 +1,7 @@
 module.exports = function(source) {
 	this.cacheable && this.cacheable();
-  if ((typeof source === "string") && (/^#!/.test(source))) {
-    source = source.replace /^#![^\n\r]*[\r\n]/, ''
+  if ((typeof source === "string") && (/^\s*#!/.test(source))) {
+    source = source.replace /^\s*#![^\n\r]*[\r\n]/, ''
   }
 	return source
 	// this.value = [value];
