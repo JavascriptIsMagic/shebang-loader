@@ -2,7 +2,9 @@
 
 ## Installation
 
-`npm install shebang-loader`
+```none
+npm install --save-dev shebang-loader
+```
 
 ## Usage
 
